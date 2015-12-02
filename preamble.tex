@@ -11,8 +11,10 @@
 ]{geometry}
 
 \usepackage[backend=biber]{biblatex}
-\addbibresource[label=references]{./references.bib}
-\addbibresource[label=classes]{./classes.bib}
+\addbibresource{../classes.bib}
+\addbibresource{../education.bib}
+\addbibresource{../publications.bib}
+\addbibresource{../references.bib}
 
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{1pt}
@@ -35,7 +37,7 @@
 	% prints a uniform letterhead for job applications documents
 	% #1 is the title of the document (used in the footer)
 	\thispagestyle{empty}
-	
+
 	{\huge Daniel Brice} \hfill {\Large Lecturer of Mathematics}
 	\hrule
 	{\small {\tt danielbrice@gmail.com}
@@ -53,12 +55,12 @@
 	% creates a syllabus-style section for course documents
 	% #1 is the section title
 	% #2 is the section contents
-	
+
 	\vfill
 	\begin{minipage}{\textwidth}
 	%\setlength{\parskip}{10pt}
 	\hspace{-0.2in}\textbf{#1}
-	
+
 	#2
 	\end{minipage}
 	\vfill
@@ -68,8 +70,11 @@
 	% creates just the heading of a section, but not a block
 	% #1 is the section title
 	% useful for allowing page breaks within section
-	
-	\hspace{-0.2in}\textbf{#1}%
+
+  \par
+  % \vfill
+	\hspace{-0.2in}\textbf{#1}
+  \par
 }
 
 \setlength{\parskip}{10pt}

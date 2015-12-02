@@ -124,3 +124,7 @@ sympy-plots-for-*.tex/
 # WinEdt
 *.bak
 *.sav
+
+## OS X System Files
+.DS_Store
+
