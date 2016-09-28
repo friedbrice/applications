@@ -1,0 +1,138 @@
+% brice-research_statement.tex
+\documentclass[11pt]{article}
+
+\input{../preamble.tex}
+
+\begin{document}
+
+\setdoctitle{Research Statement}
+
+\makeletterhead
+
+\maketitle
+
+\vfill
+
+My research interests lie primarily with non-associative algebras---%
+mostly structure theory of Lie algebras, but also algebras more
+generally. My current pursuits align along two axes: zero product
+determined algebras and derivations of parabolic Lie algebras.
+
+\sechead{Zero product determined algebras}
+
+For our purposes, an \emph{algebra} is a vector space $A$ equipped with
+a bilinear (not-necessarily-associative) multiplication operation
+$\ast$.
+A bilinear map $\varphi : A \times A \to V$
+(where $V$ is an arbitrary vector space)
+is said to have the \emph{zero product property} if
+\[
+  \forall x, y \in A;\quad
+  x \ast y = 0 \text{ implies } \varphi(x,y) = 0
+  \text{.}
+\]
+$A$ is said to be \emph{zero product determined} if for every $\varphi$
+that satisfies the zero product property, there is a linear map
+$f : A \to V$ such that
+\[
+  \forall x, y \in A;\quad
+  \varphi(x,y) = f(x \ast y)
+  \text{.}
+\]
+
+Motivated by the linear preserver problem of operator theory, the
+definition of zero product determined originated in a 2009 paper of
+Bre\v{s}ar, Gra\v{s}i\v{c}, and S\'{a}nches Ortega
+\cite{brevsar2009zero}. The authors went on to show that the algebra of
+$n \times n$ matrices over a field is zero product determined with
+respect to the usual matrix product $XY$, with respect to the Jordan
+product $X \circ Y = XY + YX$, and with respect to the Lie bracket
+$[X,Y] = XY - YX$.
+
+Huajun Huang and I contributed by examining constructions on algebras
+that yield zero product determined algebras
+\cite{article:brice2015zero}. We showed that an algebra $(A, \ast)$ is
+zero product determined if and only if the kernel of the map $\mu : x
+\otimes y \mapsto x \ast y$ consists of rank-one tensors. Using this
+criterion, we showed that the direct sum of an arbitrary number of
+algebras is zero product determined if and only if each summand is zero
+product determined, that the tensor product of two zero product
+determined algebras is zero product determined, and various conditions
+under which homomorphic images of a zero product determined algebra are
+zero product determined. We then defined a class of matrix algebras that
+generalize block upper triangular matrices that we call \emph{block
+upper triangular ladder matrix algebras}, and we showed that these
+matrix algebras are zero product determined with respect to the usual
+matrix product.
+
+Wang, et. al. in \cite{wang2011class} showed that the parabolic
+subalgebras of simple Lie algebras over $\C$ are zero product
+determined. I use results of  \cite{article:brice2015zero} combined with
+my results on derivations \cite{arxiv:brice2015derivations} to extend
+the results of Wang, et. al. to parabolic subalgebras of reductive Lie
+algebras over $\C$ and to the derivation algebras of such parabolic
+subalgebras. I am currently preparing these results for publication
+\cite{inprep:brice0000note}.
+
+I am currently investigating whether the block upper triangular ladder
+matrix algebras are zero product determined under the Lie bracket, and I
+would like to consider the same under the Jordan product as well. More
+generally, I am investigating conditions under which the semi-direct sum
+of two algebras is zero product determined. I would also like to further
+develop the relationship between zero product determined algebras and
+the linear preserver problem, perhaps jointly with experts in operator
+theory.
+
+\sechead{Derivations of parabolic Lie algebras}
+
+A \emph{Lie algebra} consists of a vector space $\mathfrak{g}$
+and a bilinear multiplication
+$[\cdot,\cdot]: \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$
+that satisfies
+\begin{itemize}
+	\item[] $\forall x \in \mathfrak{g};\quad [x,x] = 0$, and
+	\item[] $\forall x,y,z \in \mathfrak{g};\quad
+    \big[x,[y,z]\big]+\big[y,[z,x]\big]+\big[z,[x,y]\big]=0$.
+\end{itemize}
+A \emph{derivation} on $\mathfrak{g}$ is a linear map
+$d: \mathfrak{g} \to \mathfrak{g}$ that satisfies
+\[
+  \forall x,y \in \mathfrak{g};\quad
+  d\big([x,y]\big) = \big[d(x),y\big] + \big[x,d(y)\big]
+  \text{.}
+\]
+
+For each $x \in \mathfrak{g}$ the map $\ad x : y \mapsto [x,y]$ is a
+derivation on $L$. Any such $\ad x$ for $x \in \mathfrak{g}$ is termed
+an \emph{inner derivation}, and all other derivations are termed
+\emph{outer.} Characterization of outer derivations of an arbitrary Lie
+algebra remains an open problem. A significant portion of my
+dissertation research was to characterize outer derivations of parabolic
+subalgebras of reductive Lie algebras over $\R$ and $\C$.
+
+Parabolic subalgebras of Lie algebras generalize block upper triangular
+matrices, and their study takes a central role in the theory of Lie
+algebras. In 1972, it was known that all derivations of a parabolic
+subalgebra of a semisimple Lie algebra $\mathfrak{g}$ are inner
+\cite{leger1972cohomology}. My dissertation extends these results by
+considering the case where $\mathfrak{g}$ is reductive.
+
+I showed that an arbitrary derivation of a parabolic $\mathfrak q$ is
+the sum of an inner derivation and a linear map sending $\mathfrak q$
+into $Z(\mathfrak q)$ and sending $[\mathfrak q, \mathfrak q]$ to $0$.
+Conversely, any such linear map is an outer derivation, and the
+derivation algebra $\mathcal{D}(\mathfrak{q})$ decomposes as the Lie
+algebra direct sum
+$\mathcal{D}(\mathfrak{q}) \cong \ad q \oplus \mathcal{L}$
+where $\mathcal{L}$ consists of all linear maps from
+$\mathfrak{q}$ to $Z(\mathfrak{q})$ that kill
+$[\mathfrak{q},\mathfrak{q}]$. These results were submitted to the
+\emph{Journal of Lie Theory} in November 2015
+\cite{arxiv:brice2015derivations}.
+I intend to extend these results to finite characteristic.
+
+\sechead{References}
+\printbibliography[heading=none]
+
+\label{page:last}
+\end{document}
