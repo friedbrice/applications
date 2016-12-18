@@ -1,0 +1,117 @@
+% brice-dissertation_abstract.tex
+\documentclass[11pt]{article}
+
+\input{../preamble.tex}
+
+\begin{document}
+
+\setdoctitle{Dissertation Abstract}
+
+\makeletterhead
+
+\maketitle
+
+\vfill
+
+This dissertation builds upon and extends previous work completed by the
+author and his advisor in \cite{article:brice2015zero}.
+%
+A Lie algebra $\mathfrak g$ is said to be zero product determined if for
+each bilinear map $\varphi : \mathfrak{g} \times \mathfrak{g} \to V$
+that satisfies
+\[
+  \varphi(x,y)=0 \text{ whenever } [x,y] = 0
+\]
+there is a linear map $f : [\mathfrak{g}, \mathfrak{g}] \to V$ such that
+\[
+  \varphi(x,y) = f\big([x,y] \big)
+  \text{ for all }
+  x, y \in \mathfrak{g}
+  \text{.}
+\]
+%
+A derivation $D$ on a Lie algebra $\mathfrak{g}$ is a linear map
+$D : \mathfrak{g} \to \mathfrak{g}$ satisfying
+\[
+  D\big([x,y]\big) = \big[D(x),y\big] + \big[x,D(y)\big]
+  \text{ for all }
+  x, y \in \mathfrak{g}
+  \text{.}
+\]
+%
+$\mathop{\mathrm{Der}} \mathfrak{g}$ denotes the space of all
+derivations on the Lie algebra $\mathfrak{g}$,
+which itself forms a Lie algebra.
+
+The study of derivations forms part of the classical theory of Lie
+algebras and is well understood,
+though some work has been done recently that generalizes some of the
+classical theory
+%
+\cite{%
+  dixmier1957derivations,
+  farnsteiner1988derivations,
+  jacobson1955note,
+  ou2007derivations,
+  sato1965derivations,
+  togo1961derivation,
+  wang2008derivations,
+  wang2006derivations,
+  wang2010product,
+  zhang2008class%
+}.
+%
+In contrast, the theory of zero product determined algebras is new,
+motivated by applications to analysis,
+and supports a growing body of literature
+%
+\cite{%
+  alaminos2009maps,
+  brevsar2009zero,
+  gravsivc2010zero,
+  article:brice2015zero,
+  wang2011class%
+}.
+%
+In this dissertation, we add to this body of knowledge,
+studying the two concepts of derivations and of zero product determined
+algebras individually and in relation to each other.
+
+This dissertation contains two main results.
+%
+Let $K$ denote an algebraically-closed, characteristic-zero field.
+%
+Let $\mathfrak{q}$ be a parabolic subalgebra of a reductive Lie algebra
+$\mathfrak{g}$ over $K$ or $\R$.
+%
+First we prove a direct sum decomposition of
+$\mathop{\mathrm{Der}} \mathfrak{q}$.
+%
+$\mathop{\mathrm{Der}} \mathfrak{q}$ decomposes as the direct sum of
+ideals
+\[
+  \mathop{\mathrm{Der}} \mathfrak{q}
+  = \mathfrak{L} \oplus \ad \mathfrak{q}
+  \text{,}
+\]
+where $\mathfrak{L}$ consists of all linear maps on $\mathfrak{q}$ that
+map into the center of $\mathfrak{g}$ and map
+$[\mathfrak{q}, \mathfrak{q}]$ to $0$.
+%
+Second, we apply the decomposition,
+along with results of
+\cite{article:brice2015zero} and \cite{wang2011class},
+to prove that $\mathfrak{q}$ and $\mathop{\mathrm{Der}} \mathfrak{q}$
+are zero product determined in the case that $\mathfrak{g}$
+is a Lie algebra over $K$.
+
+We conclude by discussing several possible directions for future
+research and by applying the main results to providing tabular data for
+parabolic subalgebras of reductive Lie algebras of types $A_5$, $G_2$,
+and $F_4$.
+
+\sechead{References}
+\printbibliography[heading=none]
+
+\label{page:last}
+\end{document}
